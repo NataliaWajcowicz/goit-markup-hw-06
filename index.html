@@ -348,6 +348,30 @@
                     d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
                     fill="black" />
             </svg></button>
+            <form class="form">
+                <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+                <label class="form-label">
+                    Imię
+                    <input type="text" name="name"/>
+                </label>
+                <label class="form-label">
+                    Telefon 
+                    <input type="tel" name="phone_number"/>
+                </label>
+                <label class="form-label">
+                    Email
+                    <input type="email" name="email"/>
+                </label>
+                <label class="form-label">
+                    Komentarz
+                    <textarea name="comment"></textarea>
+                </label>
+                <label class="form-label">
+                    <input type="checkbox" name="approval" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"/>
+                    Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a>.
+                </label>
+                <button type="submit">Wyślij</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
