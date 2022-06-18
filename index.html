@@ -357,26 +357,24 @@
             </svg></button>
             <form class="form">
                 <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
-                <label class="form-label">
+                <label for="name" class="form-label">
                     Imię
-                    <input class="form-input" type="text" name="name"/>
+                    <input class="form-input" type="text" name="name" id="name"/>
                 </label>
-                <label class="form-label">
+                <label for="phone_number" class="form-label">
                     Telefon 
-                    <input class="form-input" type="tel" name="phone_number"/>
+                    <input class="form-input" type="tel" name="phone_number" id="phone-number"/>
                 </label>
-                <label class="form-label">
+                <label for="email" class="form-label">
                     Email
-                    <input class="form-input" type="email" name="email"/>
+                    <input class="form-input" type="email" name="email" id="email"/>
                 </label>
-                <label class="form-label">
+                <label for="comment" class="form-label">
                     Komentarz
-                    <textarea class="form-textarea" name="comment" placeholder="Wprowadź tekst"></textarea>
+                    <textarea class="form-textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
                 </label>
-                <label class="form-label checkbox">
-                    <input type="checkbox" name="approval" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"/>
-                    Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a>.
-                </label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="approval" id="approval"/>
+                <label for="approval" class="checkbox">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a>.</label>
                 <button class="form-button" type="submit">Wyślij</button>
             </form>
         </div>
