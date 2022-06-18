@@ -534,7 +534,6 @@ footer{
     border-radius:50%;
     align-items: center;
     justify-content: center;
-    margin-right:10px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -547,6 +546,11 @@ footer{
 .footer-social-link:focus{
     background-color:var(--brand-color);
 }
+
+.footer-social-item:not(last-child){
+    margin-right:10px;
+}
+
 
 
 .footer-social-title{
@@ -572,11 +576,12 @@ footer{
     line-height: 16px;
     letter-spacing: 0.03em;
     color: var(--light-color);
+    display:flex;
+    flex-direction:column;
 }
 
 .footer-form-input{
     margin-top:20px;
-    margin-right:12px;
     width:358px;
     height:50px;
     padding:15px 295px 15px 16px;
@@ -584,19 +589,21 @@ footer{
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    margin-right:12px;
 }
 
 .footer-form-label:placeholder{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-button{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -610,7 +617,14 @@ footer{
     color: var(--light-color);
     margin-bottom:94px;
     margin-top:34px;
+    padding:10px 24px 10px 42px;
+    cursor:pointer;
 }
+
+.footer-form-button-icon{
+    margin-left:24px;
+}
+
 .filters{
     display:flex;
     flex-direction:row;
@@ -829,6 +843,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     text-transform:capitalize;
     padding-left:40px;
     margin:0;
+    position:relative;
 }
 
 .form-input, .form-textarea {
@@ -836,6 +851,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     margin-right:40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left:42px;
 }
 
 .form-input {
@@ -856,9 +872,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:focus-within{
-    border:1px solid var(--brand-color);
+.form-input-icon{
+    fill:#212121;
+    position:absolute;
+    top:29px;
+    left:52px;
 }
+
 
 .checkbox-section{
     font-size: 14px;
@@ -908,6 +928,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    position:relative;
 }
 .checkbox::before{
     content:'';
@@ -918,6 +939,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     margin-right:8px;
 }
 
+.checkbox-icon{
+    position:absolute;
+    top:24px;
+    left:58px;
+
+}
 .checkbox-input:checked+.checkbox::before{
     background-color:var(--brand-color);
 }
