@@ -791,6 +791,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     z-index:1;
 }
 
+.close-btn svg{
+    z-index:2;
+    cursor:pointer;
+}
+
 .backdrop{
     position: absolute;
     width: 100%;
@@ -946,25 +951,25 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     letter-spacing: 0.03em;
     color: #757575;
     position:relative;
+    cursor: pointer;
 }
+
 .checkbox::before{
     content:'';
     display:inline-block;
     height:15px;
     width:16px;
-    border:1px solid #212121;
+    outline:1px solid #212121;
     margin-right:8px;
 }
 
-.checkbox-icon{
-    position:absolute;
-    top:24px;
-    left:58px;
-
-}
-.checkbox-input:checked+.checkbox::before{
+.checkbox-input:checked + .checkbox::before{
+    background-image:url(../images/checkbox.png);
+    background-repeat:no-repeat;
+    background-position:50% 50%;
     background-color:var(--brand-color);
 }
+
 
 .visually-hidden{
     position:absolute;
