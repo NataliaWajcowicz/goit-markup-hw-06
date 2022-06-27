@@ -893,9 +893,26 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
 .form-input-icon{
     fill:#212121;
     position:absolute;
-    top:29px;
     left:52px;
+    top:33px;
+    height:13px;
+    width:13px;
+    display:flex;
 }
+
+.form-input-icon:first-of-type{
+    height:12px;
+    width:12px;
+    top:34px;
+}
+
+.form-input-icon:last-of-type{
+    height:12px;
+    width:15px;
+    top:34px;
+}
+
+
 
 .form-label:focus-within svg{
     fill:var(--brand-color);
